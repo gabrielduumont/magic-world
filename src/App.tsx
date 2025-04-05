@@ -1,11 +1,14 @@
 import { BrowserRouter } from 'react-router';
 import { AppRoutes } from './routing/AppRoutes';
+import { FavoriteHouseContextProvider } from './contexts/FavoriteHouseContext/Provider';
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
+    <FavoriteHouseContextProvider>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </FavoriteHouseContextProvider>
   );
 }
 
