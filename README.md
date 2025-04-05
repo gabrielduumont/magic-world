@@ -2,6 +2,10 @@
 
 Magic World is a React-based web application built with TypeScript and Vite. It showcases characters, spells, and other elements from the Harry Potter universe.
 
+# Preview URL:
+
+To see a [live version click here](https://magic-world-theta.vercel.app/)
+
 ## Prerequisites
 
 Before running the project, ensure you have the following installed:
