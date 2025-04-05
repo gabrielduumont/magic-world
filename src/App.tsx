@@ -1,5 +1,12 @@
+import { BrowserRouter } from 'react-router';
+import { AppRoutes } from './routing/AppRoutes';
+
 function App() {
-  return <p className="project-text-hightlight">APP</p>;
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
 
 export default App;
