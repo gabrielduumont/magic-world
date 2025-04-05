@@ -1,54 +1,108 @@
-# React + TypeScript + Vite
+# Magic World
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Magic World is a React-based web application built with TypeScript and Vite. It showcases characters, spells, and other elements from the Harry Potter universe.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before running the project, ensure you have the following installed:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (version 16 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Follow these steps to set up and run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd magic-world
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Run the following command to install the required dependencies:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+or if you're using Yarn:
+
+```bash
+yarn install
+```
+
+### 3. Run the Development Server
+
+Start the development server with:
+
+```bash
+npm run dev
+```
+
+or with Yarn:
+
+```bash
+yarn dev
+```
+
+This will start the Vite development server. Open your browser and navigate to `http://localhost:5173` to view the application.
+
+### 4. Build for Production
+
+To create a production build, run:
+
+```bash
+npm run build
+```
+
+or with Yarn:
+
+```bash
+yarn build
+```
+
+The production-ready files will be generated in the `dist` directory.
+
+### 5. Preview the Production Build
+
+To preview the production build locally, run:
+
+```bash
+npm run preview
+```
+
+or with Yarn:
+
+```bash
+yarn preview
+```
+
+This will start a local server to serve the production build.
+
+### 6. Lint the Code
+
+To check for linting issues, run:
+
+```bash
+npm run lint
+```
+
+or with Yarn:
+
+```bash
+yarn lint
+```
+
+## Project Structure
+
+- **`src/`**: Contains the source code for the application.
+- **`public/`**: Contains static assets.
+- **`dist/`**: Contains the production build (generated after running `npm run build`).
+- **`vite.config.ts`**: Configuration file for Vite.
+
+## License
+
+This project is licensed under the MIT License.

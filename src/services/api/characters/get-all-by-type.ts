@@ -3,7 +3,9 @@ import { ApiService } from '../api-service';
 import { CHARACTERS_ROUTES_BUILDER } from './__constants';
 import { tryParseJson } from '@project/utils/tryParseJson';
 
-export const getAllCharactersByType = async (type: CharacterType): Promise<Character[]> => {
+export const getAllCharactersByType = async (
+  type: CharacterType,
+): Promise<Character[]> => {
   const service = new ApiService();
 
   const requestUrl = CHARACTERS_ROUTES_BUILDER.ALL_BY_TYPE(type);

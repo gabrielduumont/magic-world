@@ -8,7 +8,11 @@ type HouseButtonProps = {
   onClick?: () => void;
 };
 
-export const HouseButton = ({ house, isFavorite, onClick }: HouseButtonProps) => {
+export const HouseButton = ({
+  house,
+  isFavorite,
+  onClick,
+}: HouseButtonProps) => {
   return (
     <Button
       label={house}

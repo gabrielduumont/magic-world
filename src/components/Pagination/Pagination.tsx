@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback } from 'react';
 
 type PaginationProps = {
   currentPage: number;
@@ -8,8 +8,8 @@ type PaginationProps = {
 
 const getActiveClass = (disabled: boolean) => {
   return disabled
-    ? "bg-gray-700 hover:bg-gray-600 text-gray-300 cursor-not-allowed"
-    : "bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-500 text-slate-900 shadow-lg cursor-pointer";
+    ? 'bg-gray-700 hover:bg-gray-600 text-gray-300 cursor-not-allowed'
+    : 'bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-500 text-slate-900 shadow-lg cursor-pointer';
 };
 
 export const Pagination = ({
@@ -22,7 +22,7 @@ export const Pagination = ({
       if (page < 1 || page > totalPages) return;
       onPageChange(page);
     },
-    [totalPages]
+    [totalPages],
   );
 
   return (

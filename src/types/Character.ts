@@ -1,6 +1,6 @@
 export const CHARACTER_TYPES = {
-  STUDENT: "student",
-  STAFF: "staff",
+  STUDENT: 'student',
+  STAFF: 'staff',
 } as const;
 
 export type CharacterType =

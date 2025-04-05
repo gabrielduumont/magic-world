@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 export const useDataFetcher = <T>(fetchFn: () => Promise<T>) => {
   const [data, setData] = useState<T | null>(null);
@@ -17,7 +17,7 @@ export const useDataFetcher = <T>(fetchFn: () => Promise<T>) => {
       return;
     }
 
-    setError("An unknown error occurred");
+    setError('An unknown error occurred');
   }, []);
 
   const fetchData = useCallback(async () => {
@@ -33,7 +33,7 @@ export const useDataFetcher = <T>(fetchFn: () => Promise<T>) => {
 
   useEffect(() => {
     if (!fetchFn) {
-      setError("No fetch function provided");
+      setError('No fetch function provided');
       return;
     }
 

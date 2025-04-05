@@ -12,7 +12,8 @@ export const CharacterDetails = ({ character }: CharacterDetailsProps) => {
   return (
     <div
       className={`rounded-lg shadow-lg p-6 ${getHouseActiveColorClasses(
-        character.house, true
+        character.house,
+        true,
       )}`}
     >
       <CharacterProfile character={character} />
